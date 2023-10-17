@@ -1,0 +1,82 @@
+.nonnormative { color: green; margin: 2em 0 2em 0em; padding: 0.5em 1em; border: none; background: #DDFFDD; }
+.nonnormative h3 { color: inherit; background: inherit; }
+.nonnormative:before { display: table; margin: -1em -0.5em -0.5em auto; width: auto; content: 'This section is non-normative.'; color: black; font-style: italic; border: solid 2px; background: white; padding: 0 0.25em; }
+
+table.old-table { border-collapse: collapse; border-style: hidden hidden none hidden; }
+table.old-table thead, table tbody { border-bottom: solid; }
+table.old-table tbody th:first-child { border-left: solid; }
+table.old-table tbody th { text-align: left; }
+table.old-table td, table th:not(.prmName) { border-left: solid; border-right: solid; border-bottom: solid thin; vertical-align: top; padding: 0.2em; }
+
+dl.switch { padding-left: 2em; }
+dl.switch > dt { text-indent: -1.5em; }
+dl.switch > dt:before { content: '\21AA'; padding: 0 0.5em 0 0; display: inline-block; width: 1em; text-align: right; line-height: 0.5em; }
+
+p + * > li, dd li { margin: 1em 0; }
+
+@media screen { code :link, code :visited { color: inherit; } }
+
+/* fix bug entry form styling */
+body > form { padding: 4px; border: 1px solid red; background-color: white; }
+
+#bug-assist-form { position: fixed; width: 10em; top: 5em; right: 1em; font-family: Tahoma, sans-serif; font-size: 11px; opacity: 0.8; text-align: right; }
+
+.prmNullTrue,
+.prmNullFalse,
+.prmOptTrue,
+.prmOptFalse {
+  width: 45px;
+  text-align: center;
+}
+
+.prmNullTrue,
+.prmOptTrue {
+  color: #0c0;
+}
+
+.prmNullFalse,
+.prmOptFalse {
+  color: #c00;
+}
+
+table.parameters {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+table.parameters {
+  border-bottom: 1px solid #90b8de;
+}
+
+.parameters th {
+  color: inherit;
+  padding: 3px 5px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.parameters th:not(.prmName) {
+  color: #fff;
+  background: #005a9c;
+}
+
+.parameters td,
+.parameters .prmName {
+  padding: 3px 10px;
+  border-top: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.parameters tr:first-child td {
+  border-top: none;
+}
+
+.parameters .prmName {
+  width: 100px;
+}
+
+.parameters .prmType {
+  width: 120px;
+}
